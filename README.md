@@ -15,13 +15,11 @@ You have to log out and log in again for all settings to take effect.
 * [Homebrew](https://brew.sh)
 * [1Password](https://1password.com/downloads/mac/)
 * [Firefox Developer Edition](https://www.mozilla.org/sv-SE/firefox/developer/)
-    * [1Password extension](https://addons.mozilla.org/sv-SE/firefox/addon/1password-x-password-manager/)
-    * [Google container extension](https://addons.mozilla.org/sv-SE/firefox/addon/google-container/?src=search)
-    * [Facebook container extension](https://addons.mozilla.org/sv-SE/firefox/addon/facebook-container/?src=search)
 * [Alfred](https://www.alfredapp.com)
 
 ## From App Store
 * BetterSnapTool (remember to add keyboard shortcuts)
+* Slack
 
 ## Other tools
 
@@ -69,6 +67,60 @@ Some files can be good to backup from your old computer.
 
     ~/.zshrc
     ~/.gitconfig
+
+## Firefox Setup
+* [about:preferences#privacy](about:preferences#privacy):
+    * Strict tracking protection
+    * Always send 'Do not track' request
+    * Delete cookies when Firefox is closed
+    * Don't save passwords
+    * Block all notifications
+
+### Extensions
+* [1Password extension](https://addons.mozilla.org/sv-SE/firefox/addon/1password-x-password-manager/)
+* [Google container extension](https://addons.mozilla.org/sv-SE/firefox/addon/google-container/?src=search)
+* [Facebook container extension](https://addons.mozilla.org/sv-SE/firefox/addon/facebook-container/?src=search)
+
+## VSCode Setup
+
+* Cmd + Shift + P => `Shell Command: Install 'code' command in PATH`
+
+* Cmd + Shift + P => `Preferences: Open Settings (JSON)`
+
+I use the following settings:
+
+```
+{
+    // Editor:
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "breadcrumbs.enabled": true,
+    "editor.formatOnSave": true,
+
+    // Disable normal javascript formatting in order not to interfere with ESLint:
+    "javascript.format.enable": false,
+
+    // ESLint:
+    "eslint.enable": true,
+    "eslint.autoFixOnSave": true,
+
+    // Stylelint extension:
+    "css.validate": false,
+    "less.validate": false,
+    "scss.validate": false,
+
+    // Other:
+    "window.zoomLevel": 0,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+}
+```
+
+### Extensions
+* GitLens
+* indent-rainbow
+* ESLint
+* Color Picker
 
 ## References
 
