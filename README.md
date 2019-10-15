@@ -37,15 +37,30 @@ Install oh-my-zsh:
 
 Install plugins:
 
+thefuck
+
     brew install thefuck
+
+autojump
+
     brew install autojump
+
+[bat](https://github.com/sharkdp/bat)
+    
+    brew install bat
 
 Update `~/.zshrc`
 
 Open a new shell.
 
+### Git
+Update `~/.gitconfig`
+
 ## Backup
 Some files can be good to backup from your old computer.
+
+    ~/.zshrc
+    ~/.gitconfig
 
 ## References
 
