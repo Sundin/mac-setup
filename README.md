@@ -1,6 +1,6 @@
 # How to set up a new Mac
 
-This is how I like to set up my Mac! 
+This is how I like to set up my Mac!
 
 ## Auto config
 
@@ -8,32 +8,40 @@ This is how I like to set up my Mac!
 
 You have to log out and log in again for all settings to take effect.
 
+### Manual settings
+
+Night Shift has to be enabled manually.
+
 ## Install programs
 
-* [iTerm2](https://iterm2.com)
-* [VSCode](https://code.visualstudio.com/Download)
-* [Homebrew](https://brew.sh)
-* [1Password](https://1password.com/downloads/mac/)
-* [Firefox Developer Edition](https://www.mozilla.org/sv-SE/firefox/developer/)
-* [Alfred](https://www.alfredapp.com)
+- [iTerm2](https://iterm2.com)
+- [VSCode](https://code.visualstudio.com/Download)
+- [Homebrew](https://brew.sh)
+- [1Password](https://1password.com/downloads/mac/)
+- [Firefox Developer Edition](https://www.mozilla.org/sv-SE/firefox/developer/)
+- [Brave Browser](https://brave.com/download/)
+- [Alfred](https://www.alfredapp.com)
+- [Anki](https://apps.ankiweb.net/)
 
 ## From App Store
-* BetterSnapTool (remember to add keyboard shortcuts)
-* Slack
+
+- BetterSnapTool (remember to add keyboard shortcuts)
+- Slack
+- Amphetamine
 
 ## Other tools
 
 ### Zsh
-* Install the latest version and set as current user's default shell:
 
-```    
+- Install the latest version and set as current user's default shell:
+
+```
 brew install zsh && \
 sudo sh -c 'echo $(brew --prefix)/bin/zsh >> /etc/shells' && \
 chsh -s $(brew --prefix)/bin/zsh
 ```
 
-
-* Install oh-my-zsh:
+- Install oh-my-zsh:
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
@@ -50,42 +58,46 @@ Install plugins:
     brew install autojump
 
 **[bat](https://github.com/sharkdp/bat)**
-    
-    brew install bat
 
-* Update `~/.zshrc`
+brew install bat
 
-* Open a new shell for changes to take effect.
+- Update `~/.zshrc`
+
+- Open a new shell for changes to take effect.
 
 ### Git
-* Update `~/.gitconfig`
 
-* Generate a new [ssh key](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
+- Update `~/.gitconfig`
+
+- Generate a new [ssh key](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
 ## Backup
+
 Some files can be good to backup from your old computer.
 
     ~/.zshrc
     ~/.gitconfig
 
 ## Firefox Setup
-* [about:preferences#privacy](about:preferences#privacy):
-    * Strict tracking protection
-    * Always send 'Do not track' request
-    * Delete cookies when Firefox is closed
-    * Don't save passwords
-    * Block all notifications
+
+- [about:preferences#privacy](about:preferences#privacy):
+  - Strict tracking protection
+  - Always send 'Do not track' request
+  - Delete cookies when Firefox is closed
+  - Don't save passwords
+  - Block all notifications
 
 ### Extensions
-* [1Password extension](https://addons.mozilla.org/sv-SE/firefox/addon/1password-x-password-manager/)
-* [Google container extension](https://addons.mozilla.org/sv-SE/firefox/addon/google-container/?src=search)
-* [Facebook container extension](https://addons.mozilla.org/sv-SE/firefox/addon/facebook-container/?src=search)
+
+- [1Password extension](https://addons.mozilla.org/sv-SE/firefox/addon/1password-x-password-manager/)
+- [Google container extension](https://addons.mozilla.org/sv-SE/firefox/addon/google-container/?src=search)
+- [Facebook container extension](https://addons.mozilla.org/sv-SE/firefox/addon/facebook-container/?src=search)
 
 ## VSCode Setup
 
-* Cmd + Shift + P => `Shell Command: Install 'code' command in PATH`
+- Cmd + Shift + P => `Shell Command: Install 'code' command in PATH`
 
-* Cmd + Shift + P => `Preferences: Open Settings (JSON)`
+- Cmd + Shift + P => `Preferences: Open Settings (JSON)`
 
 I use the following settings:
 
@@ -113,14 +125,20 @@ I use the following settings:
     "window.zoomLevel": 0,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.tabSize": 2,
 }
 ```
 
 ### Extensions
-* GitLens
-* indent-rainbow
-* ESLint
-* Color Picker
+
+- GitLens
+- indent-rainbow
+- ESLint
+- Color Picker
+
+## Development
+
+Node
 
 ## References
 
