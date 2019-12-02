@@ -12,7 +12,7 @@ You have to log out and log in again for all settings to take effect.
 
 Night Shift has to be enabled manually.
 
-Change DNS Server to [https://1.1.1.1/dns](1.1.1.1).
+Change DNS Server to [1.1.1.1](https://1.1.1.1/dns).
 
 ## Install programs
 
