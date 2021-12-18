@@ -82,12 +82,18 @@ Some files can be good to backup from your old computer.
 
 ## Firefox Setup
 
-- [about:preferences#privacy](about:preferences#privacy):
+- [about:preferences#privacy](about:preferences#privacy)
   - Strict tracking protection
   - Always send 'Do not track' request
   - Delete cookies when Firefox is closed
   - Don't save passwords
   - Block all notifications
+
+- [about:preferences#search](about:preferences#search)
+  - Use DuckDuckGo as the default and disable the ones that you don't need. 
+
+- [about:preferences#home](about:preferences#home)
+  - Disable everything to get a clean slate without distractions every time you open a new tab.
 
 ### Extensions
 
