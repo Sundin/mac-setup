@@ -4,7 +4,7 @@ This is how I like to set up my Mac!
 
 ## SSH key
 
-[Generate a SSH key] for your new computer and [add it on Github](https://github.com/settings/keys). Now you can clone this repo!
+[Generate a SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for your new computer and [add it on Github](https://github.com/settings/keys). Now you can clone this repo!
 
 ## Auto config
 
