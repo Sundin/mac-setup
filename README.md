@@ -4,7 +4,7 @@ This is how I like to set up my Mac!
 
 ## SSH key
 
-[Generate a SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for your new computer and [add it on Github](https://github.com/settings/keys). Now you can clone this repo!
+[Generate a SSH key](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for your new computer and [add it on Github](https://github.com/settings/keys). Now you can clone this repo!
 
 ## Auto config
 
@@ -20,14 +20,15 @@ Change DNS Server to [1.1.1.1](https://1.1.1.1/dns).
 
 ## Install programs
 
-- [iTerm2](https://iterm2.com)
-- [VSCode](https://code.visualstudio.com/Download)
+- [iTerm2](https://iterm2.com) - much more powerful than the standard Terminal
+- [VSCode](https://code.visualstudio.com/Download) - moste versatile code IDE
 - [Homebrew](https://brew.sh)
 - [1Password](https://1password.com/downloads/mac/)
-- [Firefox Developer Edition](https://www.mozilla.org/sv-SE/firefox/developer/)
-- [Brave Browser](https://brave.com/download/)
+- [Firefox Developer Edition](https://www.mozilla.org/sv-SE/firefox/developer/) - best browser
+- [Brave Browser](https://brave.com/download/) - second best browser as fallback
 - [Alfred](https://www.alfredapp.com)
 - [Anki](https://apps.ankiweb.net/)
+- [Teams](https://www.microsoft.com/sv-se/microsoft-teams/download-app#desktopAppDownloadregion)
 
 ## From App Store
 
@@ -41,23 +42,26 @@ Change DNS Server to [1.1.1.1](https://1.1.1.1/dns).
 
 - Install the latest version and set as current user's default shell:
 
-```
+```sh
 brew install zsh && \
 sudo sh -c 'echo $(brew --prefix)/bin/zsh >> /etc/shells' && \
 chsh -s $(brew --prefix)/bin/zsh
 ```
 
+- Run these two commands in your terminal to add Homebrew to your PATH:
+
+```sh
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/gustav/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 - Install oh-my-zsh:
 
-```
+```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
 Install plugins:
-
-**thefuck**
-
-    brew install thefuck
 
 **autojump**
 
@@ -65,24 +69,15 @@ Install plugins:
 
 **[bat](https://github.com/sharkdp/bat)**
 
-brew install bat
+    brew install bat
 
-- Update `~/.zshrc`
-
-- Open a new shell for changes to take effect.
-
-### Git
-
-- Update `~/.gitconfig`
-
-- Generate a new [ssh key](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent).
 
 ## Backup
 
 Some files can be good to backup from your old computer.
 
-    ~/.zshrc
-    ~/.gitconfig
+- `~/.zshrc`
+- [~/.gitconfig](https://gist.github.com/Sundin/7dfd300be8d70af08d73bc4545ccbe9e)
 
 ## Firefox Setup
 
@@ -143,14 +138,18 @@ I use the following settings:
 
 ### Extensions
 
-- GitLens
-- indent-rainbow
-- ESLint
-- Color Picker
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color)
 
 ## Development
 
-Node
+- [nvm](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/)
+
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+```
 
 ## References
 
