@@ -23,6 +23,7 @@ You have to log out and log in again for all settings to take effect.
 ## Install programs
 
 - [iTerm2](https://iterm2.com) - much more powerful than the standard Terminal
+  - Follow [this guide](https://danicfilip.com/2018/how_to_use_alt_arrows_to_navigate_between_words_in_iterm2/) to set up keyboard shortcuts for navigating between words.
 - [VSCode](https://code.visualstudio.com/Download) - moste versatile code IDE
 - [Homebrew](https://brew.sh)
 - [1Password](https://1password.com/downloads/mac/)
@@ -137,7 +138,7 @@ I use the following settings:
     "scss.validate": false,
 
     // Other:
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 0.8,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "editor.tabSize": 2,
@@ -150,6 +151,7 @@ I use the following settings:
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Color Picker](https://marketplace.visualstudio.com/items?itemName=anseki.vscode-color)
+- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 ## Development
 
