@@ -32,6 +32,7 @@ defaults write -g InitialKeyRepeat -int 10
 defaults write com.apple.dock persistent-apps -array
 
 # Change location where to save screenshots
+mkdir -p ~/Downloads/Screenshots
 defaults write com.apple.screencapture location ~/Downloads/Screenshots
 
 # Change default folder for new Finder windows

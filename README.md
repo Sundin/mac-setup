@@ -14,9 +14,11 @@ You have to log out and log in again for all settings to take effect.
 
 ### Manual settings
 
-Night Shift has to be enabled manually.
+- Night Shift has to be enabled manually.
 
-Change DNS Server to [1.1.1.1](https://1.1.1.1/dns).
+- Change DNS Server to [1.1.1.1](https://developers.cloudflare.com/1.1.1.1/setup-1.1.1.1/macos).
+
+- [Sync Desktop and Documents to iCloud](https://support.apple.com/en-us/HT206985).
 
 ## Install programs
 
@@ -29,12 +31,14 @@ Change DNS Server to [1.1.1.1](https://1.1.1.1/dns).
 - [Alfred](https://www.alfredapp.com)
 - [Anki](https://apps.ankiweb.net/)
 - [Teams](https://www.microsoft.com/sv-se/microsoft-teams/download-app#desktopAppDownloadregion)
+- [Mullvad VPN](https://mullvad.net/sv/)
 
 ## From App Store
 
 - BetterSnapTool (remember to add keyboard shortcuts)
 - Slack
 - Amphetamine
+- Zoom
 
 ## Other tools
 
@@ -81,6 +85,8 @@ Some files can be good to backup from your old computer.
 
 ## Firefox Setup
 
+- [Import bookmarks from your old computer](https://support.mozilla.org/en-US/kb/export-firefox-bookmarks-to-backup-or-transfer)
+
 - [about:preferences#privacy](about:preferences#privacy)
   - Strict tracking protection
   - Always send 'Do not track' request
@@ -93,6 +99,8 @@ Some files can be good to backup from your old computer.
 
 - [about:preferences#home](about:preferences#home)
   - Disable everything to get a clean slate without distractions every time you open a new tab.
+
+- [Enable DNS over HTTPS](https://developers.cloudflare.com/1.1.1.1/encrypted-dns/dns-over-https/encrypted-dns-browsers)
 
 ### Extensions
 
@@ -150,6 +158,8 @@ I use the following settings:
 ```sh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 ```
+
+- [Docker](https://docs.docker.com/desktop/mac/install/)
 
 ## References
 
