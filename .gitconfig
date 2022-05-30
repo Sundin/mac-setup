@@ -1,0 +1,20 @@
+[user]
+	name = Gustav Sundin
+	email = sundin666@gmail.com
+
+[core]
+	pager = less -F -X
+
+[alias]
+	# Remove all branches that have been merged upstreams
+	cleanup = "!git branch | grep  -v '\\*\\|master\\|develop' | xargs git branch -d" && git gc
+	leaderboard = shortlog -sn --all --no-merges
+
+[pull]
+	ff = only
+
+[init]
+	defaultBranch = master
+
+[fetch]
+	prune = true

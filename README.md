@@ -7,6 +7,9 @@ This is how I like to set up my Mac!
 [Generate a SSH key](https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for your new computer and [add it on Github](https://github.com/settings/keys). Now you can clone this repo!
 
 ## Auto config
+I have written a script to configure many system settings the way I want them.
+
+Just run it like this:
 
     ./auto-config.sh
 
@@ -24,26 +27,29 @@ You have to log out and log in again for all settings to take effect.
 
 - [iTerm2](https://iterm2.com) - much more powerful than the standard Terminal
   - Follow [this guide](https://danicfilip.com/2018/how_to_use_alt_arrows_to_navigate_between_words_in_iterm2/) to set up keyboard shortcuts for navigating between words.
-- [VSCode](https://code.visualstudio.com/Download) - moste versatile code IDE
+- [VSCode](https://code.visualstudio.com/Download) - moste versatile code editor
 - [Homebrew](https://brew.sh)
 - [1Password](https://1password.com/downloads/mac/)
 - [Firefox Developer Edition](https://www.mozilla.org/sv-SE/firefox/developer/) - best browser
 - [Brave Browser](https://brave.com/download/) - second best browser as fallback
-- [Alfred](https://www.alfredapp.com)
 - [Anki](https://apps.ankiweb.net/)
-- [Teams](https://www.microsoft.com/sv-se/microsoft-teams/download-app#desktopAppDownloadregion)
 - [Mullvad VPN](https://mullvad.net/sv/)
 
 ## From App Store
 
 - BetterSnapTool (remember to add keyboard shortcuts)
-- Slack
 - Amphetamine
-- Zoom
 
 ## Other tools
 
 ### Zsh
+
+- Run these two commands in your terminal to add Homebrew to your PATH:
+
+```sh
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/gustav/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
 
 - Install the latest version and set as current user's default shell:
 
@@ -51,13 +57,6 @@ You have to log out and log in again for all settings to take effect.
 brew install zsh && \
 sudo sh -c 'echo $(brew --prefix)/bin/zsh >> /etc/shells' && \
 chsh -s $(brew --prefix)/bin/zsh
-```
-
-- Run these two commands in your terminal to add Homebrew to your PATH:
-
-```sh
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/gustav/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
 - Install oh-my-zsh:
@@ -68,7 +67,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 
 Install plugins:
 
-**autojump**
+**[autojump](https://github.com/wting/autojump)**
 
     brew install autojump
 
@@ -81,8 +80,8 @@ Install plugins:
 
 Some files can be good to backup from your old computer.
 
-- `~/.zshrc`
-- [~/.gitconfig](https://gist.github.com/Sundin/7dfd300be8d70af08d73bc4545ccbe9e)
+- [~/.zshrc](.zshrc)
+- [~/.gitconfig](.gitconfig)
 
 ## Firefox Setup
 
