@@ -156,10 +156,10 @@ I use the following settings:
 
 ## Development
 
-- [nvm](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/)
+- [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
 ```sh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 ```
 
 - [Docker](https://docs.docker.com/desktop/mac/install/)
